@@ -3,24 +3,27 @@ import Link from "next/link";
 function raw_engg() {
   return (
     <div className="main-div">
-      <img
-        src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt9ddbb23089ee681c/5e2ec39e07e2907e353a0ad5/default-logo-1.png?format=pjpg"
-        width="180"
-      />
-      <div className="Nav-links">
-        <Link href="/raw_engg">
-          <a>Home</a>
-        </Link>
-        <Link href="/contentstack">
-          <a>Contentstack</a>
-        </Link>
-        <Link href="/surfboard">
-          <a>Surfboard</a>
-        </Link>
-      </div>
-
+      <nav className="navbar">
+        <img
+          src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt9ddbb23089ee681c/5e2ec39e07e2907e353a0ad5/default-logo-1.png?format=pjpg"
+          width="180"
+        />
+        <div className="Nav-links">
+          <Link href="/raw_engg">
+            <button className="Home-button">Home</button>
+          </Link>
+          <Link href="/contentstack">
+            <a>Contentstack</a>
+          </Link>
+          <Link href="/surfboard">
+            <a>Surfboard</a>
+          </Link>
+        </div>
+      </nav>
+      <main></main>
+      <footer></footer>
       <style jsx>{`
-        .main-div {
+        .navbar {
           display: flex;
           justify-content: space-between;
           background-color: black;
@@ -32,7 +35,14 @@ function raw_engg() {
           align-items: center;
           justify-content: space-evenly;
         }
-
+        .Home-button {
+          background-color: #35b0a6;
+          width: 25%;
+          border-radius: 50px;
+          color: white;
+          padding: 20px;
+          border: 1px solid black;
+        }
       `}</style>
     </div>
   );
