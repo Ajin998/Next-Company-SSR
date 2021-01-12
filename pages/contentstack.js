@@ -1,6 +1,10 @@
-import React from "react";
+import { useEffect } from "react";
 import Link from "next/link";
-function contentstack() {
+import { BASE_URL, contentstack_data } from "../constants/endpoint";
+import fetchData from "../services/fetchData";
+
+function contentstack(props) {
+  console.warn("data", props);
   return (
     <div className="main-div">
       <nav className="navbar">
@@ -21,17 +25,16 @@ function contentstack() {
           </Link>
         </div>
       </nav>
-      <main className="main-content">
-        <h1>Finally, A Modern Content Management System</h1>
-        <p>
-          Contentstack brings business and technology teams together to deliver
-          personalized, omnichannel digital experiences.
-        </p>
+      {props.data.map((data) => (
+        <main className="main-content">
+          <h1>{data.company_title}</h1>
+          <p>{data.company_para}</p>
 
-        <button className="content-button">TRY FOR FREE</button>
+          <button className="content-button">TRY FOR FREE</button>
 
-        <a className="content-anchor"> Request a Demo</a>
-      </main>
+          <a className="content-anchor"> Request a Demo</a>
+        </main>
+      ))}
       <footer></footer>
       <style jsx>{`
         @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
@@ -95,5 +98,13 @@ function contentstack() {
     </div>
   );
 }
+
+//For fetching all the data from REST Api and passing props to our main function
+contentstack.getInitialProps = async () => {
+  let data = await fetchData(BASE_URL + contentstack_data);
+  return {
+    data,
+  };
+};
 
 export default contentstack;
