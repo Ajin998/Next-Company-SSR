@@ -27,6 +27,7 @@ function contentstack(props) {
       </nav>
       {props.data.map((data) => (
         <main className="main-content">
+          <img src={data.banner_img} className="banner-img" />
           <h1>{data.company_title}</h1>
           <p>{data.company_para}</p>
 
@@ -54,7 +55,7 @@ function contentstack(props) {
         }
         .navbar {
           padding: 10px;
-          border-bottom: 2px solid black;
+          // border-bottom: 2px solid black;
           display: flex;
           justify-content: space-between;
         }
@@ -85,6 +86,13 @@ function contentstack(props) {
           color: white;
           font-family: "Montserrat", sans-serif;
         }
+        .banner-img {
+          width: 50%;
+          border: 2px solid black;
+          border-radius: 10px;
+          margin-top: 2rem;
+          box-shadow: 5px 10px 20px #9d64a9;
+        }
         .main-content h1 {
           font-size: 80px;
         }
@@ -100,6 +108,7 @@ function contentstack(props) {
           margin-top: 20px;
           border-top: 2px solid black;
         }
+        @media (max-width: );
       `}</style>
     </div>
   );
