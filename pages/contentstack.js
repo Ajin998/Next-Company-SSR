@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { BASE_URL, contentstack_data } from "../constants/endpoint";
 import fetchData from "../services/fetchData";
+import Footer from "../components/Footer";
 
 function contentstack(props) {
-  console.warn("data", props);
   return (
     <div className="main-div">
       <nav className="navbar">
@@ -35,11 +35,13 @@ function contentstack(props) {
           <a className="content-anchor"> Request a Demo</a>
         </main>
       ))}
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
       <style jsx>{`
         @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
         .main-div {
-          height: 100vh;
+          // height: 100vh;
           width: 100vw;
           background-image: linear-gradient(
             to left bottom,
@@ -93,6 +95,10 @@ function contentstack(props) {
           background-color: #ee5644;
           color: white;
           margin: 40px;
+        }
+        footer {
+          margin-top: 20px;
+          border-top: 2px solid black;
         }
       `}</style>
     </div>
