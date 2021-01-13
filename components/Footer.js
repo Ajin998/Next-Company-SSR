@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="social-media-links">
       <p>Copyright @2021 Ajin Varghese</p>
-      <a href="https://twitter.com/contentstack">
+      <a href="https:/contentstack.com">
         <TwitterIcon /> <FacebookIcon /> <LinkedInIcon /> <YouTubeIcon />
       </a>
       <style jsx>{`
@@ -17,6 +17,7 @@ function Footer() {
           width: 50%;
           margin: auto;
           align-items: center;
+          color: white;
         }
       `}</style>
     </div>
