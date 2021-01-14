@@ -1,3 +1,54 @@
+# Company website server side rendering using Next.js
+
+## Short summary
+
+This project is based on Next.js which renders components in server side environment after rendered in server side it builds a static page to re-render faster.
+
+## Working of the project
+
+1. When you start the project our home page will redirect to raw_engg company website and from there you can manually navigate to different companies websites like for example contentstack website and surfboard website.
+
+2. Raw_engg landing page, it consist of header that contains raw-engg logo and navigation links for the other companies.
+
+3. In main section, it has a banner image and title overlaid on it along with some text and a button.
+
+4. Finally it has a footer section which contains all the social media icons.
+
+5. This structure is repeated for all the other companies landing pages as well.
+
+6. Also all landing pages is mobile responsive.
+
+## Instruction for downloading the project.
+
+1. To get started firstly you have to clone this project in your local directory by typing:-
+
+```
+git clone https://github.com/Ajin998/Next-Company-SSR.git
+```
+2. After cloning the project you have to install all the node dependicies. To do that you have to type:-
+
+```
+npm install
+
+```
+
+3. After installing you will notice that a node_modules folder and package-lock.json file is added in your root directory.
+
+4. After that you are good to go, To start the application type:-
+
+```
+npm start
+```
+This will basically start our project in localhost 3000.
+
+5. After typing npm start you will redirect to raw_engg page and our application is successfully started on localhost 3000.
+
+## Live Demo
+
+[Companies website](https://next-company-ssr-fls9vvhco.vercel.app/raw_engg)
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
