@@ -17,10 +17,10 @@ function raw_engg(props) {
             <button className={styles["Home-button"]}>Home</button>
           </Link>
           <Link href="/contentstack">
-            <a>Contentstack</a>
+            <button>Contentstack</button>
           </Link>
           <Link href="/surfboard">
-            <a>Surfboard</a>
+            <button>Surfboard</button>
           </Link>
         </div>
       </nav>
