@@ -25,6 +25,7 @@ This project is based on Next.js which renders components in server side environ
 ```
 git clone https://github.com/Ajin998/Next-Company-SSR.git
 ```
+
 2. After cloning the project you have to install all the node dependicies. To do that you have to type:-
 
 ```
@@ -39,6 +40,7 @@ npm install
 ```
 npm start
 ```
+
 This will basically start our project in localhost 3000.
 
 5. After typing npm start you will redirect to raw_engg page and our application is successfully started on localhost 3000.
@@ -46,6 +48,11 @@ This will basically start our project in localhost 3000.
 ## Live Demo
 
 [Companies website](https://next-company-ssr-fls9vvhco.vercel.app/raw_engg)
+
+## Static file
+
+Static files are added in static folder
+
 
 ---
 
